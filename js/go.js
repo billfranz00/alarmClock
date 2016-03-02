@@ -26,6 +26,7 @@ function currentTime() {
 		seconds = addZero(rightNow.getSeconds()),
 		theTime = hours + ":" + minutes + ":" + seconds;
 	document.getElementById("masterClock").innerHTML = theTime;
+	//runs function every second
 	setTimeout(function() {
 		currentTime();
 	}, 1000);
