@@ -11,3 +11,19 @@ label {
 	display: block;
 }
 
+.blue {
+	background-color: blue;
+}
+
+img {
+	margin-top: -100px;
+}
+
+.left {
+	float: left;
+	margin-left: 50px;
+}
+
+.right {
+	float: right;
+}

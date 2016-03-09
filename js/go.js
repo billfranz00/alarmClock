@@ -37,11 +37,22 @@ function compareTime() {
 	var rightNow = new Date(),
 		hours = twelve(rightNow.getHours()),
 		minutes = rightNow.getMinutes(),
+		seconds = rightNow.getSeconds(),
 		clockValue = Number(document.getElementById("clockHour").value),
-		minuteValue = Number(document.getElementById("clockMinute").value);
-	if(hours === clockValue && minutes === minuteValue) {
+		minuteValue = Number(document.getElementById("clockMinute").value),
+		secondValue = Number(document.getElementById("clockSecond").value);
+	if(hours === clockValue && minutes === minuteValue && seconds === secondValue) {
 		//shows an alert when the times match
-		alert("It's Time!!!!")
+		document.body.setAttribute("class", "blue");
+		document.getElementById("masterClock").setAttribute("class", "animated wobble infinite")
+		var img1 = document.createElement("img"),
+			img2 = document.createElement("img");
+		img1.src = "https://catmacros.files.wordpress.com/2009/12/wait_what.jpg"
+		img2.src = "http://i.imgur.com/clcP0gS.jpg"
+		img1.setAttribute("class", "left animated jello infinite")
+		img2.setAttribute("class", "right animated hinge infinite")
+		document.body.appendChild(img1)
+		document.body.appendChild(img2)
 	}
 	else {
 		//runs function again if time inputted isn't the same as the actual time
