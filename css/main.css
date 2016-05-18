@@ -11,6 +11,10 @@ label {
 	display: block;
 }
 
+.red {
+	background-color: red;
+}
+
 .blue {
 	background-color: blue;
 }
@@ -26,4 +30,11 @@ img {
 
 .right {
 	float: right;
+}
+
+.texty {
+	font-weight: bold;
+	color: purple;
+	display: none;
+	margin-top: 50px;
 }

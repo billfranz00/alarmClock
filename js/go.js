@@ -34,6 +34,8 @@ function currentTime() {
 
 //Determines if inputted is same as current time
 function compareTime() {
+	document.body.setAttribute('class', 'red')
+	document.getElementById('hOne').style.display = "block"
 	var rightNow = new Date(),
 		hours = twelve(rightNow.getHours()),
 		minutes = rightNow.getMinutes(),
@@ -43,6 +45,7 @@ function compareTime() {
 		secondValue = Number(document.getElementById("clockSecond").value);
 	if(hours === clockValue && minutes === minuteValue && seconds === secondValue) {
 		//shows an alert when the times match
+		document.getElementById('hOne').style.display = "none"
 		document.body.setAttribute("class", "blue");
 		document.getElementById("masterClock").setAttribute("class", "animated wobble infinite")
 		var img1 = document.createElement("img"),
