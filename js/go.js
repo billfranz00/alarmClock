@@ -46,13 +46,18 @@ function compareTime() {
 		document.body.setAttribute("class", "blue");
 		document.getElementById("masterClock").setAttribute("class", "animated wobble infinite")
 		var img1 = document.createElement("img"),
-			img2 = document.createElement("img");
+			img2 = document.createElement("img"),
+			audio = document.createElement("audio");
 		img1.src = "https://catmacros.files.wordpress.com/2009/12/wait_what.jpg"
 		img2.src = "http://i.imgur.com/clcP0gS.jpg"
+		audio.src = "sound/theSong.mp3"
 		img1.setAttribute("class", "left animated jello infinite")
 		img2.setAttribute("class", "right animated hinge infinite")
+		audio.setAttribute("type", "audio/mpeg")
+		audio.setAttribute("autoplay", "autoplay")
 		document.body.appendChild(img1)
 		document.body.appendChild(img2)
+		document.body.appendChild(audio)
 	}
 	else {
 		//runs function again if time inputted isn't the same as the actual time
