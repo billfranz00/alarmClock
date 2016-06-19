@@ -3,8 +3,14 @@
 }
 
 form {
-	margin-top: 100px;
+	margin-top: 50px;
 	display: block;
+}
+
+h3 {
+	color: green;
+	font-family: cursive;
+	margin-left: 2%;
 }
 
 label {

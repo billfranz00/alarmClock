@@ -11,10 +11,13 @@ function addZero(i) {
 //Changes hour to am/pm (not internationl time)
 function twelve(hour) {
 	if(hour > 12) {
-		return hour = hour-12; //or h -= 12;
+		return hour = hour - 12; //or h -= 12;
 	}
-	else if(hour === 0) {
+	else if(hour == 0) {
 		return hour = 12;
+	}
+	else {
+		return hour
 	}
 }
 
